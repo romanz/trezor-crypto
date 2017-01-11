@@ -35,6 +35,7 @@ class HDNode(c.Structure):
         ('chain_code', c.c_uint8 * 32),
         ('private_key', c.c_uint8 * 32),
         ('public_key', c.c_uint8 * 33),
+        ('curve', c.c_void_p),
     ]
 
 
